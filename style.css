@@ -77,7 +77,13 @@ body{
   /* height: 100vw; */
   /* background-color: #3399CC; */
   background-image: url(assets/gif-3.gif);
-  background-size: 100% ;
+  /* background-size: 100% ; */
+  height: 98.2vh; /* Makes sure the body takes the full viewport height */
+  /* background-image: url('path/to/your/image.jpg'); */
+  background-size: cover; /* Scales the image to cover the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Ensures the image does not repeat */
+  background-attachment: fixed;
 
 }
 
