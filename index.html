@@ -5,25 +5,47 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/sakura.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
+    <nav class="navbar">
+      <a href="https://scholar.google.com/citations?user=0UDOYOgAAAAJ&hl=en" target="_blank" class="nav-item">
+        <img src="https://cdn.simpleicons.org/googlescholar/ffffff" alt="Google Scholar" style="width: 20px; height: 20px; color: white;">
+    </a>
+      <a href="https://www.linkedin.com/in/ishika-joshi-0966441a5/" target="_blank" class="nav-item">
+          <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://x.com/ishikaajoshii" target="_blank" class="nav-item">
+        <i class="fab fa-twitter"></i> <!-- Twitter icon -->
+    </a>
+      <a href="https://drive.google.com/file/d/1Enn64qgM1qw1CeJdCZVoKadJzVFMiruE/view?usp=sharing" target="_blank" class="nav-item">
+          Resume
+      </a>
+  </nav>
     <div class="sidebar">
+      <a href="#first" class="tooltip"
+      ><span class="tooltiptext">Home</span>🏠</a
+    >
       <a href="#home" class="tooltip"
         ><span class="tooltiptext">About</span>🙋🏻‍♀️</a
       >
-      <a href="#services" class="tooltip"
-        ><span class="tooltiptext">Publications</span>🌸</a
+      <a href="#publication" class="tooltip"
+        ><span class="tooltiptext">Publications</span>📝</a
       >
-      <a href="#clients" class="tooltip"
-        ><span class="tooltiptext">Experience</span>🍃</a
+      <a href="#proj" class="tooltip"
+        ><span class="tooltiptext">Selected Projects</span>👩🏽‍💻</a
       >
-      <a href="#contact" class="tooltip"
-        ><span class="tooltiptext">Resume</span>📝</a
-      >
+      <a href="#activity" class="tooltip"
+      ><span class="tooltiptext">Activities</span>🍃</a
+    >
+    <!-- <a href="#activity" class="tooltip"
+    ><span class="tooltiptext">Resume</span>Resume</a
+  > -->
+  
     </div>
 
     <div class="scroll-container">
-      <div class="slide page-1">
+      <div class="slide page-1" id="first">
         <div class="Welcome-Text">Hey There!!</div>
         <div class="thanks-text-1">
           I am Ishika <em class="hindi">इशिका</em>- a multidisciplinary HCI
@@ -50,16 +72,21 @@
         <div class="thanks-text-2">
           And this is an attempt at summarising myself through a website:3
         </div> -->
+        <div class="instruction">👋 This is a Horizontal Scroll Website, Scroll to your left to proceed!<br>Also! All the artwork is mine, unless mentioned:)</div>
       </div>
 
-      <div class="slide page-2">
+      <div class="slide page-2" id="home">
         <img src="assets/illustrations-white.png" style="width: 100%" />
         <div class="about-section">
           <!-- <div class="sidepanel-1"></div> -->
           <div>
-            <div class="about-head">About Me</div>
-            <div class="about-text">
-              Hey There! I am Ishika and I am a Researcher in
+            <!-- <div class="about-head">About Me</div> -->
+            <div class="flex-panel">
+              <div><img src="assets/image-2.gif" class="my-img" /></div>
+              <div class="about-text">
+                <div class="highlight-head">Me, Myself, and HCI!</div>
+                <br />
+                <!-- Hey There! I am Ishika and I am a Researcher in
               <span class="highlight">Human Computer Interaction</span> . I am
               currently working as HCI Research Associate at Adobe! Priorly, I
               have been associated with some very cool research at @IIITD,
@@ -83,18 +110,87 @@
               At Adobe, my current research is aimed at building for Human AI
               interaction by studying Human – LLM Interactions. I have also
               worked on interactions for annotation practices for GenAI
-              applications and culturalisation of Adobe Express.
+              applications and culturalisation of Adobe Express. -->
+                I'm Ishika, a researcher in
+                <span class="highlight-pink">Human-Computer Interaction</span>,
+                currently working as an HCI Research Associate at Adobe.
+                <br /><br />
+
+                What connects me to HCI is my intrigue for the tales of
+                <span class="highlight-text">human experiences</span>. I
+                approach these experiences from a reductionist perspective,
+                focusing on the fundamental elements that shape, influence, and
+                evolve them. As Marshall McLuhan said,
+                <em
+                  >"We shape our tools, and thereafter our tools shape us."</em
+                >
+                I’m fascinated by the
+                <span class="highlight-text">bidirectional influences</span>
+                between <span class="highlight-text">human factors</span> like
+                values, culture, philosophies, and environments, and their
+                interactions with complex
+                <span class="highlight-text">social actors like technology</span
+                >.
+
+                <br />
+                In addition to being a researcher, I'm also a
+                <span class="highlight-purple">designer and developer</span>. I
+                take great joy in using my creative and technical skills to
+                design solutions that amplify and enhance these human
+                experiences, with
+                <span class="highlight-purple">
+                  technology as my creative material.</span
+                >
+
+                <br /><br />
+
+                Previously, I completed my Bachelor’s in Technology in
+                <span class="highlight-yellow"
+                  >Computer Science and Design</span
+                >
+                from <a href="https://iiitd.ac.in/academics/btech/csd" class="intro-links">IIITD</a> in 2023. I have conducted research in Interactive
+                Computing, Social Computing, and Human-AI Interaction, with
+                publications at venues like CHI, CSCW, and SIGCSE-TS.I’ve had
+                the privilege to explore these interests through various
+                opportunities. I've worked with <a href="https://iiitd.ac.in/pushpendra" class="intro-links">Dr. Pushpendra Singh</a> on how
+                socio-political unrest affects interactions with job-seeking and
+                mental health technologies, and with <a href="https://old.iiitd.ac.in/aman" class="intro-links">Dr. Aman Parnami</a> on
+                interactive tools for AR/VR and educational storytelling. I also
+                collaborated with <a href="https://tap2k.org/" class="intro-links"> Dr. Tapan Parikh </a>on cultural storytelling and
+                implicit bias in LLMs, and with<a href="https://kudhru.github.io/" class="intro-links"> Dr. Dhruv Kumar </a>on LLMs in
+                Indian classrooms. At Adobe, I have worked with <a href="https://scholar.google.com/citations?user=n8iUBg8AAAAJ&hl=en" class="intro-links">Balaji Krishnamurthy</a>, <a href="https://yunyaoli.github.io/" class="intro-links">Dr. Yunyao Li </a>, and <a href="https://www.linkedin.com/in/tara-kola-a68a7642/" class="intro-links">Tara Kola</a> with my research focusing on Human-AI
+                interaction, studying LLM alignment with human prompts,
+                annotation practices for GenAI, and the culturalization of Adobe
+                Express.
+                <br />
+                <span class="highlight-green"
+                  >I will be applying for PhD programs in HCI in Fall 2025!</span
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="slide page-3">
+      <div class="slide page-3" id="publication">
         <div class="publications-head">Publications</div>
+        <div class="google-scholar">
+          This list might not be updated, check
+          <a
+            href="https://scholar.google.com/citations?user=0UDOYOgAAAAJ&hl=en"
+          >
+            Google Scholar
+          </a>
+          here.
+        </div>
         <div class="pub-content">
           <img src="assets/lily.png" class="lily" />
           <div class="paper-wrapper">
             <div class="papers-container">
+              <a
+              href="https://dl.acm.org/doi/abs/10.1145/3637375"
+              class="paper-link"
+            >
               <div class="paper">
                 <div class="paper-title">
                   Navigating the Job-Seeking Journey: Challenges and
@@ -116,6 +212,11 @@
                   </div>
                 </div>
               </div>
+              </a>
+              <a
+              href="https://dl.acm.org/doi/abs/10.1145/3613904.3642507"
+              class="paper-link"
+            >
               <div class="paper">
                 <div class="paper-title">
                   ”Unrest and trauma stays with you!”: Navigating mental health
@@ -139,6 +240,11 @@
                   </div>
                 </div>
               </div>
+              </a>
+              <a
+              href="https://dl.acm.org/doi/abs/10.1145/3626252.3630803"
+              class="paper-link"
+            >
               <div class="paper">
                 <div class="paper-title">
                   ChatGPT in the Classroom: An Analysis of Its Strengths and
@@ -166,33 +272,41 @@
                 </div>
               </div>
             </div>
+          </a>
 
             <div class="papers-container">
-              <div class="paper">
-                <div class="paper-title">
-                  “It's not like Jarvis, but it's pretty close!” - Examining
-                  ChatGPT's Usage among Undergraduate Students in Computer
-                  Science
-                </div>
-                <div class="paper-desc">
-                  Ritvik Budhiraja, Ishika Joshi, Jagat Sesh Challa, Harshal D.
-                  Akolekar, and Dhruv Kumar. 2024. “It's not like Jarvis, but
-                  it's pretty close!” - Examining ChatGPT's Usage among
-                  Undergraduate Students in Computer Science. In Proceedings of
-                  the 26th Australasian Computing Education Conference (ACE
-                  '24). Association for Computing Machinery, New York, NY, USA,
-                  124–133. https://doi.org/10.1145/3636243.3636257
-                </div>
-                <div class="paper-tag">
-                  <div class="tag" style="background-color: #3399cc">
-                    SIGCSE'24
+              <a
+                href="https://dl.acm.org/doi/abs/10.1145/3636243.3636257"
+                class="paper-link"
+              >
+                <div class="paper">
+                  <div class="paper-title">
+                    “It's not like Jarvis, but it's pretty close!” - Examining
+                    ChatGPT's Usage among Undergraduate Students in Computer
+                    Science
                   </div>
-                  <div class="tag" style="background-color: #4d908e">HCAI</div>
-                  <div class="tag" style="background-color: #f9844a">
-                    Education
+                  <div class="paper-desc">
+                    Ritvik Budhiraja, Ishika Joshi, Jagat Sesh Challa, Harshal
+                    D. Akolekar, and Dhruv Kumar. 2024. “It's not like Jarvis,
+                    but it's pretty close!” - Examining ChatGPT's Usage among
+                    Undergraduate Students in Computer Science. In Proceedings
+                    of the 26th Australasian Computing Education Conference (ACE
+                    '24). Association for Computing Machinery, New York, NY,
+                    USA, 124–133. https://doi.org/10.1145/3636243.3636257
+                  </div>
+                  <div class="paper-tag">
+                    <div class="tag" style="background-color: #3399cc">
+                      SIGCSE'24
+                    </div>
+                    <div class="tag" style="background-color: #4d908e">
+                      HCAI
+                    </div>
+                    <div class="tag" style="background-color: #f9844a">
+                      Education
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
               <div class="paper">
                 <div class="paper-title">
                   [POSTER] Magical Mirrors and I: Interweaving learning with
@@ -413,11 +527,12 @@
         </section>
     </div> -->
 
-      <div class="slide page-5">
+      <div class="slide page-5" id="proj">
         <div class="projects-head">Projects</div>
+        <!-- <div class="google-scholar">You may click </div> -->
         <div class="section-text">
           Here are some more of my projects! I have visualised them in styles of
-          different artists using Adobe Firefly! Click any to know more:D
+          different artists I like using Adobe Firefly! Click any to know more:D
         </div>
         <br />
         <br />
@@ -425,7 +540,7 @@
         <br />
 
         <div class="proj-wrapper">
-          <a href="#">
+          <a href="https://magic-mirrors-intro.my.canva.site/">
             <div class="proj-frame">
               <img src="assets/magicmirror.jpg" class="proj-img" />
               <div class="proj-name">
@@ -435,11 +550,23 @@
             </div>
           </a>
 
-          <a href="#">
+          <a href="https://sinchlairr.github.io/ishikajoshi/Projects/tsuru/index.html">
             <div class="proj-frame">
               <img src="assets/tsuru.jpg" class="proj-img" />
               <div class="proj-name">Tsuru : Origami in AR</div>
               <div class="proj-desc">Creativity, Gamification, AR/VR</div>
+            </div>
+          </a>
+
+
+
+          <a href="https://toffee-intro.my.canva.site/">
+            <div class="proj-frame">
+              <img src="assets/toffee.jpg" class="proj-img" />
+              <div class="proj-name">
+                Toffee: Money Management via Chat Interfaces
+              </div>
+              <div class="proj-desc">Asset Based Design, Interactive System </div>
             </div>
           </a>
 
@@ -448,16 +575,6 @@
               <img src="assets/coprompter.jpg" class="proj-img" />
               <div class="proj-name">
                 CoPrompter : Assisting Human AI Alignment
-              </div>
-              <div class="proj-desc">Creativity, Gamification, AR/VR</div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="proj-frame">
-              <img src="assets/kurious.jpg" class="proj-img" />
-              <div class="proj-name">
-                Kurious : Imagining Sex Ed for Middle Childhood
               </div>
               <div class="proj-desc">Creativity, Gamification, AR/VR</div>
             </div>
@@ -532,7 +649,7 @@
         </div> -->
       </div>
 
-      <div class="slide page-6">
+      <div class="slide page-6" id="activity">
         <div class="page6-container">
           <div class="act-content">
             <div class="acad-head">Academic Activities</div>
