@@ -11,6 +11,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Donegal+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 
 
 @supports (animation-timeline: view()) {
@@ -40,6 +43,7 @@ body{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     height: 100vh;
+    background-color: #2F8FBA;
 }
 
 .scroll-container {
@@ -52,6 +56,8 @@ body{
 .slide {
   scroll-snap-align: start;
   flex: 0 0 100%;
+
+  /* min-height: 100vh; */
   /* width: 100vw;
   height: 100vh; */
   /* display: flex; */
@@ -78,12 +84,13 @@ body{
   /* background-color: #3399CC; */
   background-image: url(assets/gif-3.gif);
   /* background-size: 100% ; */
-  height: 98.2vh; /* Makes sure the body takes the full viewport height */
+  height: 100%; /* Makes sure the body takes the full viewport height */
   /* background-image: url('path/to/your/image.jpg'); */
   background-size: cover; /* Scales the image to cover the entire background */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Ensures the image does not repeat */
   background-attachment: fixed;
+  overflow: hidden;
 
 }
 
@@ -133,7 +140,7 @@ body{
 }
 
 .thanks-text-1{
-  font-family: "Donegal One", serif;
+  font-family: "Bona Nova SC", serif;
   text-align: left;
   font-size: 3.5vh;
   position: relative;
@@ -209,7 +216,8 @@ body{
 
 
 .thanks-text{
-  font-family: 'Gochi Hand', cursive;
+  
+  font-family: "Patrick Hand", cursive;
   text-align: left;
   font-size: 3.5vh;
   position: relative;
@@ -234,7 +242,8 @@ body{
 }
 
 .thanks-text-2{
-  font-family: 'Gochi Hand', cursive;
+  
+  font-family: "Patrick Hand", cursive;
   text-align: left;
   font-size: 3.5vh;
   position: relative;
@@ -268,14 +277,17 @@ body{
 
 .instruction{
   position: relative;
-  top: 53vh;
+  top: 45vh;
+  /* height: 2vh; */
   left:75vw ;
+  width: 22vw;
   font-family: "Patrick Hand", cursive;
   font-style: italic;
   right: 0;
   color: #505050;
   /* align-self: left; */
 }
+
 
 .intro-text{
   font-size: 3vh;
@@ -290,13 +302,14 @@ body{
   z-index: 5;
   /* height: 100%; */
   /* width: 250px; */
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   top: 45vh;
   left: 2vw;
   font-size: 1vh;
   /* background-color: #111; */
   /* padding-top: 20px; */
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
 }
@@ -372,8 +385,15 @@ body{
 
 .page-2{
   width: 100%;
+  height: 98vh;
   /* background-color: #52a3cc; */
-  background-color: #2F8CB7;
+  /* background-color: #2F8CB7; */
+
+  background-image: url('assets/gif-copy.png');
+  background-size: cover; /* Scales the image to cover the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Ensures the image does not repeat */
+  background-attachment: fixed;
   /* height: 100vh;
   overflow: hidden; */
   
@@ -394,14 +414,11 @@ body{
   /* top: ; */
 }
 
-/* .about-section{
-  display: flex;
-} */
-
 .about-text{
   font-size: 1.2vw;
   position: relative;
-  width: 55vw;
+  width: 55%;
+  max-height: 40vh;
   left: 12vw;
   font-family: "Patrick Hand", cursive;
   color: white;
@@ -409,12 +426,13 @@ body{
   text-align: justify;
   text-justify: inter-word;
   top: -12vh;
-  height: 30vh;
+  /* height: 30vh; */
   /* font-family: "Donegal One", serif; */
   /* color: #7F4511; */
   /* left: 44vw; */
   /* top: -20vh; */
   margin-left: 5vh;
+  /* overflow-y: hidden; */
 }
 
 .flex-panel{
@@ -433,7 +451,18 @@ body{
 .page-3{
   position: relative;
   /* top: 10vh; */
-  background-color: #d7f2ff;
+  /* background-color: #d7f2ff; */
+  width: 100%;
+  height: 100%;
+  /* background-color: #52a3cc; */
+  /* background-color: #2F8CB7; */
+
+  background-image: url('assets/gif-copy-3.png');
+  background-size: cover; /* Scales the image to cover the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Ensures the image does not repeat */
+  background-attachment: fixed;
+
 
   
 }
@@ -670,12 +699,13 @@ body{
 }
 
 .section-text{
-  /* font-family: "Patrick Hand", cursive; */
+  font-family: "Patrick Hand", cursive;
   margin-left: 15vh;
   margin-top: 2vh;
   font-size: 2vh;
   color: #59869c;
-  font-family: "Donegal One", serif;
+  font-style: italic;
+  /* font-family: "Bona Nova SC", serif; */
 }
 
 .proj-wrapper{
@@ -707,7 +737,7 @@ body{
 }
 
 .proj-name{
-  font-family: "Donegal One", serif;
+  font-family: "Bona Nova SC", serif;
   font-size: 2vh;
   color: #000000;
   text-align: center;
@@ -716,7 +746,7 @@ body{
 }
 
 .proj-desc{
-  font-family: "Donegal One", serif;
+  font-family: "Bona Nova SC", serif;
   font-size: 1.3vh;
   color: #3D5B6B;
   text-align: center;
@@ -857,6 +887,8 @@ a{
 
 .page-6{
   position: relative;
+  background-color: white;
+  height: 100%;
 
   /* top: 30vh; */
 }
