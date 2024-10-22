@@ -30,7 +30,7 @@ body{
   /* cursor: url(assets/leaf-cursor.png); */
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   overflow-y: hidden;
     /* background-image: url("assets/pixelartcloud-final.gif");
     background-position: center;
@@ -52,6 +52,7 @@ body{
   scroll-snap-type: x mandatory;
   width: 100vw;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 .slide {
   scroll-snap-align: start;
@@ -381,11 +382,13 @@ body{
 
 .page-1{
   width: 100%;
+  overflow-y: hidden;
 }
 
 .page-2{
   width: 100%;
   height: 98vh;
+  overflow-y: hidden;
   /* background-color: #52a3cc; */
   /* background-color: #2F8CB7; */
 
@@ -415,7 +418,7 @@ body{
 }
 
 .about-text{
-  font-size: 1.2vw;
+  /* font-size: 1.2vw; */
   position: relative;
   width: 55%;
   max-height: 40vh;
@@ -433,6 +436,10 @@ body{
   /* top: -20vh; */
   margin-left: 5vh;
   /* overflow-y: hidden; */
+}
+
+.about-me-text{
+  font-size: 1vw;
 }
 
 .flex-panel{
@@ -454,6 +461,8 @@ body{
   /* background-color: #d7f2ff; */
   width: 100%;
   height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
   /* background-color: #52a3cc; */
   /* background-color: #2F8CB7; */
 
@@ -580,6 +589,7 @@ body{
 .page-4{
   position: relative;
   top: 15vh;
+  overflow-y: hidden;
 }
 
 .experience-head{
